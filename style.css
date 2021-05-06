@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.headerP{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+
+.bannerP{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+   background: url("images/BGprincipal.jpg");
+   background-size: cover;
+   display: flex;
+   align-items: center;
+}
+
+.contentP{
+    max-width: 600px;
+}
+
+.contentP h2{
+    color: #fff;
+    font-size: 2.5em;
+}
+.contentP h2 span{
+    color: rgb(59, 59, 59);
+    font-size: 1.2em;
+}
+.contentP p{
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+}
+.contentP a{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #fff;
+    color: #000;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+@media (max-width: 767px)
+{
+    .headerP{
+        padding: 20px 50px;
+    }
+    .bannerP{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px 50px 150px;
+    }
+    .bannerP h2{
+        font-size: 1.8em;
+    }
+    .bannerP .content p,
+    .bannerP content a{
+        font-size: 1em;
+    }
+    
+    
+    
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #252829;
+}
+
+.boxp{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #000000;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.boxp:hover{
+    height: 400px;
+}
+
+.boxp .imgBxp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.boxp .imgBxp img{
+    max-width: 100%;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.boxp:hover .imgBxp img{
+    opacity: 1;
+}
+
+.boxp:before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.boxp:after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+
+
+.boxp:before,
+.boxp:after{
+    background: linear-gradient(235deg, #ffffff,#010615,#000000);
+}
+
+.boxp:nth-child(2):before,
+.boxp:nth-child(2):after{
+    background: linear-gradient(235deg, #000000,#010615,#ffffff);
+}
+
+.boxp:nth-child(3):before,
+.boxp:nth-child(3):after{
+    background: linear-gradient(235deg, #ffffff,#010615,#000000);
+}
+
+.boxp:nth-child(4):before,
+.boxp:nth-child(4):after{
+    background: linear-gradient(235deg, #000000,#010615,#ffffff);
+}
+
+
+.boxp .contenP2{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.boxp:hover .contentP2{  
+    opacity: 1;
+}
+
+.boxp .contentP2 h2{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    opacity: 1;
+}
+
+.boxp:hover .contentP2 h2{
+    opacity: 0;
+}
+
+.boxp .contentP2 h2 span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 1;
+}
+
+.boxp:hover .contentP2 h2 span{
+    opacity: 0;
+}
+
+.contentP2 a{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #fff;
+    color: #000;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.boxp:hover .contentP2 a{
+    opacity: 1;
+}
+
+
+
+/** SOBRE O AUTOR **/
+
+.banner, .banner1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(66, 66, 66);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
+.banner1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.banner .content, 
+.banner1 .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner .content h2,
+.banner1 .content h2{
+    color: #fff;
+    font-size: 60px;
+}
+
+.banner .content p,
+.banner1 .content p{
+    color: #fff;
+    font-size: 18px;
+    font-style: oblique;
+}
+
+.banner header,
+.banner1 header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.banner header .volta,
+.banner1 header .volta{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sobre{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.sobre .contentBx{
+    background: rgb(53, 53, 53);
+    padding: 100px;
+    width: 50%;
+}
+
+.heading{
+color: rgb(255, 255, 255);
+font-size: 30px;
+font-weight: 600;
+letter-spacing: 1px;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+.txt {
+    color: rgb(207, 207, 207);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sobre .perfilDG{
+background: url("images/DanielGoleman.jpg");
+width: 50%;
+background-size: cover;
+background-position: center;
+}
+
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+
+
+/** SOBRE O AUTOR FIM **/
+
+/** SOBRE O LIVRO **/
+
+.sobre .livro{
+    background: url("images/medita.jpg");
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    }
+    
+
+/** SOBRE O LIVRO FIM **/
+
+
+.section_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    place-items: center center;
+    background: #252829;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+}
+
+.container .card{
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                       5px  5px 15px rgba(0, 0, 0, 0.3),
+                       -5px  -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;                   
+}
+
+
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: url("images/Livro\ pincipal.jpg");
+    border: 2px solid #1e1f23;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .card .box:hover{
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+
+.container .card .box .contentl{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .box .contentl h2{
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.795);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container .card .box .contentl p{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 254, 254, 0.5);
+    z-index: 1;
+    transition: 1.5s;
+}
+
+.container .card .box .contentl a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #000;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.container .card .box:hover .contentl a{
+opacity: 1;
+}
+
+.container .card:nth-child(1) .box .contentl a:hover{
+    background: #2e2727;
+    transform: scale(1.2);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.753);
+}
+
+/** Trechos **/
+
+
+.sobre .trecho2{
+    background: rgb(255, 255, 255);
+    padding: 100px;
+    width: 50%;
+}
+
+.tr2{
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+}
+
+.txt2{
+    color: rgb(15, 15, 15);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+
+
+.sobre .trecho3{
+    background: rgb(255, 255, 255);
+    padding: 100px;
+    width: 50%;
+}
+
+.tr3{
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+}
+
+.txt3{
+    color: rgb(8, 8, 8);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+.sobre .trecho4{
+    background: rgb(53, 53, 53);
+    padding: 100px;
+    width: 50%;
+}
+
+.tr4{
+color: rgb(255, 255, 255);
+font-size: 30px;
+font-weight: 600;
+letter-spacing: 1px;
+margin-bottom: 10px;
+text-transform: uppercase;
+}
+
+.txt4 {
+    color: rgb(207, 207, 207);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 991px)
+{
+    .banner{
+        padding: 50px;
+    }
+    .banner header{
+        padding: 20px 50px;
+    }
+    .banner .content h2{
+        font-size: 36px;
+    }
+    .banner .content p{
+        font-size: 16px;
+    }
+    .sobre{
+        flex-direction: column;
+    }
+    .sobre .contentBx,
+    .sobre .perfilDG, 
+    .sobre .livro,
+    .sobre .trecho2,
+    .sobre .trecho3,
+    .sobre .trecho4{
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+}
+
+
+
+/** Formulário **/
+
+.containerF{
+    max-width: 700px;
+    width: 100%;
+    background: rgb(12, 12, 12);
+    padding: 30px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+}
+
+.containerF .tit{
+    font-size: 30px;
+    font-weight: 550;
+    color: #fff;
+    position: relative;
+}
+
+.containerF small{
+    bottom: 0;
+    left: 0;
+    color: #d64646;
+}
+
+.hidden{
+    display: none;
+}
+
+
+.containerF .tit::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 150px;
+    background: #292929;
+    background: -webkit-linear-gradient(to right, #434343, rgb(12, 12, 12));  
+    background: linear-gradient(to right, #434343, rgb(12, 12, 12)); 
+}
+
+.containerF form .infosU, 
+.sexoE,
+.prefe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0 30px 0;
+}
+
+form .infosU .boxU, 
+.sexoE,
+.prefe{
+   margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.infosU .boxU .detal, 
+.sexoE,
+.prefe{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.containerF .boxU input{
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(58, 58, 58);
+    padding-left: 20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgb(12, 12, 12);
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.containerF .boxU input:focus{
+    border-color: #fff;
+}
+
+.categ, categ1{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+form .buton{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .buton input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    background: #252829;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form .buton input:hover{
+    background: #3b3e3f;
+}
+
+
+
+.error{
+    border: 2px solid #d64646 !important;
+}

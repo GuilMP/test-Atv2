@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Atividade 2</title>
+  </head>
+
+
+  <body>
+
+    <div class="banner">
+      <header>
+          <a href="index.html" class="volta">Página Principal</a>
+      </header>
+      <img src="images/BGF.jpg">
+      <div class="content">
+          <h2>Formulário</h2>
+          <p>Atividade 2</p>
+      </div>
+  </div>
+
+
+
+    <div class="containerF">
+      <div class="tit">Formulário</div>
+      <form action="#" id="form" name="form">
+        <div class="infosU">
+          <div class="boxU">
+            <label class="detal">Nome completo</label>
+            <input type="text" placeholder="Ex: Joe Clarence Hilds" class="Fullname" id="Fullname">
+            <small class="msgError hidden" id="msgError">Coloque seu nome completo</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">E-mail</label>
+            <input type="email" placeholder="Ex: joeCla123@gmail.com" class="email" id="email">
+            <small class="msgError hidden" id="msgError">Complete o E-mail corretamente</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">DDD Telefone</label>
+            <input type="number" placeholder="Ex: 011" class="dddT" id="dddT">
+            <small class="msgError hidden" id="msgError">Coloque o DDD do Telefone</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">DDD Celular</label>
+            <input type="number" placeholder="Ex: 011" class="dddC" id="dddC">
+            <small class="msgError hidden" id="msgError">Coloque o DDD do Celular</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Celular</label>
+            <input type="number" placeholder="Ex: 99999-9999" class="cell" id="cell">
+            <small class="msgError hidden" id="msgError">Coloque o número do Celular</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">CPF</label>
+            <input type="number" placeholder="Ex: 000.000.000-00" class="cpf" id="cpf">
+            <small class="msgError hidden" id="msgError">Coloque o CPF</small>
+          </div>
+          <div class="sexoE">
+            <label class="sexoT">Sexo</label>
+            <div class="categ1" id="categ1">
+              <label for="dot1">
+                <input type="radio" id="male" class="male" name="gen" value="male"></input>
+                <label for="male">Masculino</label>
+              </label>
+              <label for="dot2">
+                <input type="radio" id="female" class="female" name="gen" value="female"></input>
+                <label for="female">Feminino</label>
+              </label>
+              <label for="dot3">
+                <input type="radio" id="outro" class="outro" name="gen" value="outro"></input>
+                <label for="outro">Outros</label>
+              </label>
+            </div>
+            <small class="msgError hidden" id="msgError">Selecione uma opção</small>
+          </div>
+          <div class="prefe" id="prefer">
+            <label class="detal">Preferências</label>
+            <div class="categ" id="categ">
+              <label for="">
+                <input type="checkbox" class="web" id="web"></input>
+                <label for="check" >Sistema Web</label>
+              </label>
+              <label for="">
+                <input type="checkbox" class="mb" id="mb"></input>
+                <label for="check" >Mobile</label>
+              </label>
+              <label for="">
+                <input type="checkbox" class="sys" id="sys"></input>
+                <label for="check" >Sistemas</label>
+              </label>
+            </div>
+            <small class="msgError hidden" id="msgError">Selecione pelo menos 1 preferência</small>
+        </div>
+          <div class="boxU">
+            <label class="detal">Data de Nascimento:</label>
+            <input type="date" placeholder="Ex: 01/01/1980" class="dtNasc" id="dtNasc">
+            <small class="msgError hidden" id="msgError">Informe sua Data de Nascimento</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Endereço:</label>
+            <input type="text" placeholder="Ex: Rua Brasil" class="end" id="end">
+            <small class="msgError hidden" id="msgError">Informe Seu endereço</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Número:</label>
+            <input type="number" placeholder="Ex: 4788" class="num" id="num">
+            <small class="msgError hidden" id="msgError">Informe o número da sua casa</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Complemento:</label>
+            <input type="text" placeholder="Ex: Bloco C - Apto 12" class="comple" id="comple">
+            <small class="msgError hidden" id="msgError">Adicione um complemento por favor</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">CEP:</label>
+            <input type="number" placeholder="Ex: 13.094-212 (somente números) " class="cep" id="cep">
+            <small class="msgError hidden" id="msgError">Informe o CEP</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Bairro:</label>
+            <input type="text" placeholder="Ex: Libo Ganso" class="bairro" id="bairro">
+            <small class="msgError hidden" id="msgError">Informe o bairro</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Cidade:</label>
+            <input type="text" placeholder="Ex: Santo Amaro" class="cid" id="cid">
+            <small class="msgError hidden" id="msgError">Informe sua Cidade</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Estado:</label>
+            <select id="est">
+              <option selected disabled value="">Selecione</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+          </select>
+          <small class="msgError hidden" id="msgError">Selecione um estado</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Crie sua senha:</label>
+            <input type="password" placeholder="Máximo 10 caractéres" class="senha" id="senha">
+            <small class="msgError hidden" id="msgError">Coloque a nova senha com no Máx. 10 caractéres</small>
+          </div>
+          <div class="boxU">
+            <label class="detal">Confirme sua senha:</label>
+            <input type="password" placeholder="Mesma senha anterior" class="confsenha" id="confsenha">
+            <small class="msgError hidden" id="msgError">As senhas estão diferentes</small>
+          </div>
+        </div>
+        <div class="buton">
+          <input type="submit" value="Enviar" class="button" id="button">
+        </div>
+      </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Atividade 1 e 2</h3>
+             <p>Guilherme Meneses do Prado<br>PC196027X</p>
+        </div>
+    </footer>
+      <script src="scripts.js"></script>
+  </body>
+</html>
